@@ -1,0 +1,10 @@
+{
+  "name": "jwt-test",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jsonwebtoken": "^7.1.9"
+  }
+}
