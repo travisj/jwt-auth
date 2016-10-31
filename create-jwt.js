@@ -14,7 +14,12 @@ if (!key_name) {
 	process.exit(1);
 }
 
+var an_key_name = process.argv[4];
+if (!an_key_name) {
+	an_key_name = key_name;
+}
+
 var cert = fs.readFileSync(key_name)
 var epoch_time = Math.floor((new Date).getTime());
-var token = jwt.sign({ sub: user_name, iat: epoch_time }, cert, { algorithm: 'RS256', header: { kid: key_name, alg: 'RS256' }});
+var token = jwt.sign({ sub: user_name, iat: epoch_time }, cert, { algorithm: 'RS256', header: { kid: an_key_name, alg: 'RS256' }});
 process.stdout.write(token);
