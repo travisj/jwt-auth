@@ -15,7 +15,7 @@ return openssl('genrsa', {'out': key_name, '2048': false}, function(err, buffer)
 			if (err) {
 				console.log(err);
 			} else {
-				console.log(buffer.toString());
+				console.log('Keys %s and %s created.', key_name, public_key_name);
 			}
 		});
 	}
