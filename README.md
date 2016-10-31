@@ -2,6 +2,17 @@
 
 This repo is a collection of helper scripts to get you started using JSON Web Token (jwt) authentication.
 
+## Installation
+
+```bash
+$ git clone https://github.com/travisj/jwt-auth.git
+$ cd jwt-auth
+$ npm install
+```
+Scripts should be run from the `jwt-auth` directory. There is no system installation at this time.
+
+## Usage
+
 ### create-certs.js
 This script creates your private and public keys needed for Console API token-based authentication. Certificates are written to the current directory.
 ```bash
