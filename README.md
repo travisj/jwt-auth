@@ -3,7 +3,7 @@
 This repo is a collection of helper scripts to get you started using JSON Web Token (jwt) authentication.
 
 ### create-certs.js
-This script creates your private and public keys needed for Console API certificate-based authentication. Certificates are written to the current directory.
+This script creates your private and public keys needed for Console API token-based authentication. Certificates are written to the current directory.
 ```bash
 ./create-certs.js key_name
 ```
