@@ -20,6 +20,6 @@ if (!an_key_name) {
 }
 
 var cert = fs.readFileSync(key_name)
-var epoch_time = Math.floor((new Date).getTime());
+var epoch_time = Math.floor((new Date).getTime()/1000);
 var token = jwt.sign({ sub: user_name, iat: epoch_time }, cert, { algorithm: 'RS256', header: { kid: an_key_name, alg: 'RS256' }});
 process.stdout.write(token);
